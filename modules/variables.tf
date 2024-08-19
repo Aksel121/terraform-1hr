@@ -12,7 +12,7 @@ variable "sg_rules" {
     to_port     = number
     protocol    = optional(string, "-1")
     cidr_blocks = list(string)
-    description = optional(string, "")
+    description = string
   }))
   default = []
 }
